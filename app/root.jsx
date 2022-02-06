@@ -5,46 +5,46 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "remix";
+} from 'remix'
 
-import tailwindStyles from "./index.css";
-import "what-input";
+import tailwindStyles from './index.css'
+import 'what-input'
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 export function meta() {
-  return { title: "Ten 1 Seven Studio" };
+  return { title: 'Ten 1 Seven Studio' }
 }
 
 export function links() {
   return [
     {
-      rel: "stylesheet",
+      rel: 'stylesheet',
       href: tailwindStyles,
     },
     {
-      rel: "preconnect",
-      href: "https://ten1seven.imgix.net",
+      rel: 'preconnect',
+      href: 'https://ten1seven.imgix.net',
     },
     {
-      rel: "preconnect",
-      href: "https://fonts.googleapis.com",
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com',
     },
     {
-      rel: "preconnect",
-      href: "https://fonts.gstatic.com",
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
     },
     {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&display=swap",
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&display=swap',
     },
     {
-      rel: "icon",
-      type: "image/png",
-      href: "/favicon.png",
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon.png',
     },
-  ];
+  ]
 }
 
 export default function App() {
@@ -69,8 +69,8 @@ export default function App() {
 
         <ScrollRestoration />
         <Scripts />
-        {process.env.NODE_ENV === "development" && <LiveReload />}
+        {process.env.NODE_ENV === 'development' && <LiveReload />}
       </body>
     </html>
-  );
+  )
 }
